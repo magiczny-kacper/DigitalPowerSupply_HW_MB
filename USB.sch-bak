@@ -1,0 +1,356 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_USB:FT230XS U8
+U 1 1 5FC8006C
+P 4700 3450
+F 0 "U8" H 4700 4331 50  0000 C CNN
+F 1 "FT230XS" H 4700 4240 50  0000 C CNN
+F 2 "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" H 5700 2850 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" H 4700 3450 50  0001 C CNN
+	1    4700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B J4
+U 1 1 5FC80926
+P 2350 3350
+F 0 "J4" H 2407 3817 50  0000 C CNN
+F 1 "USB_B" H 2407 3726 50  0000 C CNN
+F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 2500 3300 50  0001 C CNN
+F 3 " ~" H 2500 3300 50  0001 C CNN
+	1    2350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0118
+U 1 1 5FC83816
+P 2750 3050
+F 0 "#PWR0118" H 2750 2900 50  0001 C CNN
+F 1 "VBUS" H 2765 3223 50  0000 C CNN
+F 2 "" H 2750 3050 50  0001 C CNN
+F 3 "" H 2750 3050 50  0001 C CNN
+	1    2750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3150 2750 3150
+Wire Wire Line
+	2750 3150 2750 3050
+Wire Wire Line
+	4800 2750 4900 2750
+Wire Wire Line
+	3800 3050 4000 3050
+$Comp
+L power:VBUS #PWR0119
+U 1 1 5FC8460A
+P 4250 2650
+F 0 "#PWR0119" H 4250 2500 50  0001 C CNN
+F 1 "VBUS" H 4265 2823 50  0000 C CNN
+F 2 "" H 4250 2650 50  0001 C CNN
+F 3 "" H 4250 2650 50  0001 C CNN
+	1    4250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2750 4250 2750
+Wire Wire Line
+	4250 2750 4250 2650
+$Comp
+L Device:R R18
+U 1 1 5FC8518E
+P 5850 2350
+F 0 "R18" H 5920 2396 50  0000 L CNN
+F 1 "R" H 5920 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5780 2350 50  0001 C CNN
+F 3 "~" H 5850 2350 50  0001 C CNN
+	1    5850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5FC85D43
+P 6350 2350
+F 0 "R19" H 6420 2396 50  0000 L CNN
+F 1 "R" H 6420 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6280 2350 50  0001 C CNN
+F 3 "~" H 6350 2350 50  0001 C CNN
+	1    6350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5FC8613D
+P 5850 2650
+F 0 "D6" V 5889 2533 50  0000 R CNN
+F 1 "LED" V 5798 2533 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 5850 2650 50  0001 C CNN
+F 3 "~" H 5850 2650 50  0001 C CNN
+	1    5850 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5FC87689
+P 6350 2650
+F 0 "D7" V 6389 2533 50  0000 R CNN
+F 1 "LED" V 6298 2533 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 6350 2650 50  0001 C CNN
+F 3 "~" H 6350 2650 50  0001 C CNN
+	1    6350 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 2200 5850 2200
+Connection ~ 5850 2200
+Wire Wire Line
+	5850 2200 4900 2200
+Wire Wire Line
+	5400 3650 5850 3650
+Wire Wire Line
+	5850 3650 5850 2800
+Wire Wire Line
+	5400 3750 6350 3750
+Wire Wire Line
+	6350 3750 6350 2800
+$Comp
+L Device:R R20
+U 1 1 5FC88424
+P 6800 2350
+F 0 "R20" H 6870 2396 50  0000 L CNN
+F 1 "R" H 6870 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6730 2350 50  0001 C CNN
+F 3 "~" H 6800 2350 50  0001 C CNN
+	1    6800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5FC88877
+P 7200 2350
+F 0 "R21" H 7270 2396 50  0000 L CNN
+F 1 "R" H 7270 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7130 2350 50  0001 C CNN
+F 3 "~" H 7200 2350 50  0001 C CNN
+	1    7200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2500 6800 3050
+Wire Wire Line
+	6800 3050 5400 3050
+Wire Wire Line
+	5400 3150 7200 3150
+Wire Wire Line
+	7200 3150 7200 3000
+Wire Wire Line
+	6350 2200 6800 2200
+Connection ~ 6350 2200
+Connection ~ 6800 2200
+Wire Wire Line
+	6800 2200 7200 2200
+Wire Wire Line
+	4000 3650 3800 3650
+Wire Wire Line
+	3800 3650 3800 3050
+Connection ~ 3800 3050
+Wire Wire Line
+	4900 2200 4900 2750
+Wire Wire Line
+	4900 2200 3800 2200
+Wire Wire Line
+	3800 2200 3800 3050
+Connection ~ 4900 2200
+Wire Wire Line
+	4600 4150 4700 4150
+Wire Wire Line
+	4700 4150 4700 4250
+Connection ~ 4700 4150
+Wire Wire Line
+	4700 4150 4800 4150
+Wire Wire Line
+	4700 4250 3800 4250
+Wire Wire Line
+	2250 4250 2250 3750
+Wire Wire Line
+	2350 3750 2250 3750
+Connection ~ 2250 3750
+$Comp
+L Device:R R16
+U 1 1 5FC8D438
+P 2900 3350
+F 0 "R16" V 2693 3350 50  0000 C CNN
+F 1 "R" V 2784 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 3350 50  0001 C CNN
+F 3 "~" H 2900 3350 50  0001 C CNN
+	1    2900 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5FC8DF0A
+P 2900 3650
+F 0 "R17" V 2693 3650 50  0000 C CNN
+F 1 "R" V 2784 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 3650 50  0001 C CNN
+F 3 "~" H 2900 3650 50  0001 C CNN
+	1    2900 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 3450 2750 3450
+Wire Wire Line
+	2750 3450 2750 3350
+Wire Wire Line
+	2650 3350 2700 3350
+Wire Wire Line
+	2700 3350 2700 3650
+Wire Wire Line
+	2700 3650 2750 3650
+$Comp
+L Device:C C16
+U 1 1 5FC95FE3
+P 3200 4100
+F 0 "C16" H 3315 4146 50  0000 L CNN
+F 1 "C" H 3315 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3238 3950 50  0001 C CNN
+F 3 "~" H 3200 4100 50  0001 C CNN
+	1    3200 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 4250
+Wire Wire Line
+	3200 4250 2800 4250
+$Comp
+L Device:C C17
+U 1 1 5FC963E9
+P 3600 4100
+F 0 "C17" H 3715 4146 50  0000 L CNN
+F 1 "C" H 3715 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3638 3950 50  0001 C CNN
+F 3 "~" H 3600 4100 50  0001 C CNN
+	1    3600 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3600 4250
+Wire Wire Line
+	3600 4250 3200 4250
+Wire Wire Line
+	4000 3350 3200 3350
+Wire Wire Line
+	4000 3450 3600 3450
+Wire Wire Line
+	3050 3450 3050 3650
+Wire Wire Line
+	3200 3950 3200 3350
+Connection ~ 3200 3350
+Wire Wire Line
+	3200 3350 3050 3350
+Wire Wire Line
+	3600 3950 3600 3450
+Connection ~ 3600 3450
+Wire Wire Line
+	3600 3450 3050 3450
+$Comp
+L Device:C C15
+U 1 1 5FC99232
+P 2800 4100
+F 0 "C15" H 2915 4146 50  0000 L CNN
+F 1 "C" H 2915 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2838 3950 50  0001 C CNN
+F 3 "~" H 2800 4100 50  0001 C CNN
+	1    2800 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 4250
+Wire Wire Line
+	2800 4250 2250 4250
+$Comp
+L power:VBUS #PWR0120
+U 1 1 5FC99637
+P 2800 3950
+F 0 "#PWR0120" H 2800 3800 50  0001 C CNN
+F 1 "VBUS" H 2815 4123 50  0000 C CNN
+F 2 "" H 2800 3950 50  0001 C CNN
+F 3 "" H 2800 3950 50  0001 C CNN
+	1    2800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5FC9A006
+P 3800 3800
+F 0 "C18" H 3915 3846 50  0000 L CNN
+F 1 "C" H 3915 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3838 3650 50  0001 C CNN
+F 3 "~" H 3800 3800 50  0001 C CNN
+	1    3800 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 3650
+Wire Wire Line
+	3800 3950 3800 4250
+Connection ~ 3800 4250
+Wire Wire Line
+	3800 4250 3600 4250
+$Comp
+L Isolator:ADuM1201WS U9
+U 1 1 5FCA0ED0
+P 8250 3100
+F 0 "U9" H 8250 3567 50  0000 C CNN
+F 1 "ADuM1201WS" H 8250 3476 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8250 2700 50  0001 C CIN
+F 3 "https://www.analog.com/static/imported-files/data_sheets/ADuM1200_1201.pdf" H 8250 3000 50  0001 C CNN
+	1    8250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3200 6800 3200
+Wire Wire Line
+	6800 3200 6800 3050
+Connection ~ 6800 3050
+Wire Wire Line
+	7750 3000 7200 3000
+Connection ~ 7200 3000
+Wire Wire Line
+	7200 3000 7200 2500
+Wire Wire Line
+	7750 2900 7750 2200
+Wire Wire Line
+	7750 2200 7200 2200
+Connection ~ 7200 2200
+Wire Wire Line
+	7750 3300 7750 4250
+Wire Wire Line
+	7750 4250 4700 4250
+Connection ~ 4700 4250
+Text HLabel 9050 2900 2    50   Input ~ 0
+VDD
+Text HLabel 9050 3000 2    50   Input ~ 0
+TX
+Text HLabel 9050 3200 2    50   Output ~ 0
+RX
+Text HLabel 9050 3300 2    50   Input ~ 0
+GND
+Wire Wire Line
+	8750 2900 9050 2900
+Wire Wire Line
+	8750 3000 9050 3000
+Wire Wire Line
+	9050 3200 8750 3200
+Wire Wire Line
+	8750 3300 9050 3300
+$EndSCHEMATC
