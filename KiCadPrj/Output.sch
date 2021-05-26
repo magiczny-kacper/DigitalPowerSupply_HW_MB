@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title ""
+Title "Digital Power Supply Main Board - Output Stage"
 Date ""
-Rev ""
-Comp ""
+Rev "0.1"
+Comp "Kacper Brzostowski"
 Comment1 ""
 Comment2 ""
 Comment3 ""

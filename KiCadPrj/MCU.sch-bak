@@ -552,34 +552,34 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x05_Female J301
 U 1 1 6056922E
-P 13900 4850
-F 0 "J301" H 13928 4876 50  0000 L CNN
-F 1 "Conn_01x05_Female" H 13928 4785 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 13900 4850 50  0001 C CNN
-F 3 "~" H 13900 4850 50  0001 C CNN
-	1    13900 4850
+P 7300 950
+F 0 "J301" H 7328 976 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 7328 885 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 7300 950 50  0001 C CNN
+F 3 "~" H 7300 950 50  0001 C CNN
+	1    7300 950 
 	1    0    0    -1  
 $EndComp
-Text GLabel 13550 4850 0    50   Input ~ 0
+Text GLabel 6950 950  0    50   Input ~ 0
 RST
-Text GLabel 13550 4950 0    50   BiDi ~ 0
+Text GLabel 6950 1050 0    50   BiDi ~ 0
 PGED
-Text GLabel 13550 5050 0    50   Input ~ 0
+Text GLabel 6950 1150 0    50   Input ~ 0
 PGEC
-Text HLabel 13550 4750 0    50   Input ~ 0
+Text HLabel 6950 850  0    50   Input ~ 0
 GND
-Text HLabel 13550 4650 0    50   Input ~ 0
+Text HLabel 6950 750  0    50   Input ~ 0
 +3,3V
 Wire Wire Line
-	13550 4650 13700 4650
+	6950 750  7100 750 
 Wire Wire Line
-	13550 4750 13700 4750
+	6950 850  7100 850 
 Wire Wire Line
-	13550 4850 13700 4850
+	6950 950  7100 950 
 Wire Wire Line
-	13550 4950 13700 4950
+	6950 1050 7100 1050
 Wire Wire Line
-	13550 5050 13700 5050
+	6950 1150 7100 1150
 $Comp
 L Device:C C302
 U 1 1 6059DD29
